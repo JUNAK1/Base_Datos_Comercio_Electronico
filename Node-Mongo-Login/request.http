@@ -1,0 +1,35 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type:  application/json
+
+{
+      "name": "Sofía Pérez",
+      "email": "sofiaperez@gmail.com",
+      "password": "password1",
+      "edad": 28,
+      "cedula": "123456789",
+      "pago": "Tarjeta de crédito",
+      "genero": "FEM"
+    }
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/644188f035e8d2c7c81d0584 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/644198092fff71a2ffde127a HTTP/1.1
+Content-Type:  application/json
+
+{
+    "id_usuario" :1,
+    "nombre": "Jose Owaldo",
+    "age": 25,
+    "email": "jost9804@gamil.com",
+    "cedula": 1054683066,
+    "direccion": "calle 20#5-70 Moniquira",
+    "pago": "efecty"
+}
+###
+DELETE http://localhost:9000/api/users/64418e69bd75cf4d6e54889e HTTP/1.1
